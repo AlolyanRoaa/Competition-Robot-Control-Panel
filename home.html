@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <title>Control interface</title>
+        <style type="text/css">
+        *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+
+section{
+    position: relative;
+    background: #f0f8ff;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    transition: background 0.5s;
+}
+
+.wrap{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: -10vh;
+}
+
+.on-lin{
+    outline: none;
+    display: block;
+    border: 0;
+    font-size: 16px;
+    line-height: 1;
+    margin: 10px;
+    padding: 16px 20px;
+    border-radius: 30px;
+    background: #0081D5;
+    color: #fff;
+    cursor: pointer;
+    width: 100px;
+}
+
+a{
+    text-decoration: none;
+}
+        
+        
+        </style>
+        
+        
+    </head>
+    <body>
+        
+        <section>
+            <div class="wrap"> 
+                <div class="item">
+                  <a href="robotArmControlInterface/Control_interface.php"><button type="button" class="on-lin">Arm Control</button></a>  
+                </div>
+                <div class="item">
+                   <a href="panelControlInterface/index.php"><button type="button" class="on-lin">Base Control</button></a>  
+                     </div>
+                
+            </div>
+        
+        </section>
+        
+    </body>
+
+</html>
