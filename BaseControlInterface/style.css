@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+
+section{
+    position: relative;
+    background: #f0f8ff;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    transition: background 0.5s;
+}
+
+section.dark{
+    background: #24292d;   
+}
+
+.wrap{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: -10vh;
+}
+.item{
+    position: relative;
+}
+div .item{
+    position: relative;
+    padding: 0;
+    margin: 0;
+}
+.on-top{
+    position: relative;
+    left: 31px;
+    bottom: 100px;
+    margin-left: 200%;
+    outline: none;
+    display: block;
+    border: 0;
+    font-size: 16px;
+    padding: 16px 20px;
+    border-radius: 30px;
+    background: #0081D5;
+    color: #fff;
+    cursor: pointer;
+    width: 100px;
+    
+}
+.on-lin{
+    outline: none;
+    display: block;
+    border: 0;
+    font-size: 16px;
+    line-height: 1;
+    margin: 10px;
+    padding: 16px 20px;
+    border-radius: 30px;
+    background: #0081D5;
+    color: #fff;
+    cursor: pointer;
+    width: 100px;
+}
+.on-down{
+    position: relative;
+    right: 230px;
+    margin-top: 200%;
+    outline: none;
+    display: block;
+    border: 0;
+    font-size: 16px;
+    padding: 16px 20px;
+    border-radius: 30px;
+    background: #0081D5;
+    color: #fff;
+    cursor: pointer;
+    width: 100px;
+    text-align: center;
+}
+.toggle {
+    position: absolute;
+    top: 100px;
+    right: 100px;
+    background: #e9f5ff;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    color: #000;
+    cursor: pointer;
+}
+section.dark .toggle{
+    background: #404852;  
+}
+.toggle:before{
+    content: '\f186';
+    font-family: fontAwesome;
+    padding: 17%;
+    color: #2fa1ff;
+}
+section.dark .toggle:before{
+    content: '\f185';
+    color: #fff;
+}
+
+/* media queries*/
+
+
+@media (max-width: 650px){
+   div .wrap{
+        padding: 0;
+        width: auto;
+    }
+    
+    .on-top{
+        position: relative;
+        left: 4px;
+        bottom: 50px;
+        margin-left: 200%;
+        padding: 12px 18px; 
+    }
+    
+    .on-lin{
+        margin: 2px;
+        padding: 12px 18px; 
+    }
+    .on-down{
+        position: relative;
+        margin-left: 25%;
+        top: -50px;
+        padding: 12px 18px; 
+    }
+}
